@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: theme("fontFamily.sans");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.NovaConnectLogo {
+  font-family: "Edu NSW ACT Foundation", cursive;
+    font-weight: 800;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+projectthoughtsTitle {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+}

@@ -1,0 +1,60 @@
+MERN STACK DEVELOPER TASK— LinkedIn-Style Post + Chat 
++ Friend System (LinkedIn clone) 
+1. User Module 
+Features 
+• User register using Google only 
+• User login using Google only 
+2. Posts Module (CRUD) 
+Create Post 
+User can create a post with: 
+• text 
+• image  
+• video 
+Read Posts 
+Show all posts with: 
+• owner info (name, photo) 
+• chat icon 
+Update Post 
+• Only post creator can edit. 
+Delete Post 
+• Only post creator can delete. 
+Autoplay behavior for videos in feed 
+• When a post contains a video, the video should autoplay when it comes fully into the 
+viewport during scrolling. 
+• When the user scrolls the post out of viewport (up or down), the video should stop 
+automatically. 
+Chat / Friend Request Trigger from Post 
+When someone clicks the chat icon on a post: 
+Scenario: User A clicks chat on User B’s post 
+System behavior: 
+1. Check if A and B are already friends. 
+2. If NOT friends: 
+• Send a Friend Request Notification to post owner (User B). 
+• Notification title: “User A wants to connect with you” 
+• Notification shows accept / reject buttons. 
+3. If User B accepts: 
+• A and B become friends. 
+• A new chat window opens. 
+• The friend request notification disappears. 
+Chat Requirements 
+• Only friends can chat. 
+• Real-time chat using Socket.io. 
+• Each message stored in database with timestamp and sender info. 
+• Online / Offline status with highlight (using Socket.io): 
+• When a friend is online: their name or avatar in chat window is highlighted (green dot / green 
+border). 
+• When offline: grey dot / no highlight. 
+Other Requirements 
+• Responsive and mobile friendly UI. 
+• Tech stack: MERN (MongoDB, Express, React, Node.js) and Socket.io, Tailwind CSS 
+• Code quality: Review based on clean code practices and attractive UI. 
+■ Task Details 
+Submission Checklist 
+Your submission must include: 
+• A screen recording video demonstrating the functionality of your project. 
+• The GitHub repository link. 
+• A deployed / live link (optional, but preferred). 
+■ Submission Deadline 
+21/11/2025 — 12:00 PM 
+Please ensure that all components are submitted before the deadline to be considered for the 
+next stage
