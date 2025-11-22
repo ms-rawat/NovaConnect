@@ -4,7 +4,7 @@ import Login from './pages/Login';
 import { Home } from './pages/Home';
 import { Navbar } from './components/Navbar';
 import './index.css';
-import './app.css'
+import './App.css'
 
 import ProtectedRoute from './components/ProtectedRoute';
 
