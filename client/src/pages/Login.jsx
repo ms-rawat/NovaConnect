@@ -14,6 +14,8 @@ const Login = () => {
     // --- LIVE BACKGROUND LOGIC from LandingPage.jsx ---
     useEffect(() => {
         const canvas = canvasRef.current;
+        if (!canvas) return; // Prevent error if canvas is not rendered
+        
         const ctx = canvas.getContext('2d');
         let animationFrameId;
         let particles = [];
