@@ -22,7 +22,7 @@ const httpServer = createServer(app); // Create HTTP server for Socket.io
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:5173", // Your Vite Client URL
+  origin: ["http://localhost:5173", "https://novaconnect-tau.vercel.app/"], // Your Vite Client URL
   credentials: true
 }));
 app.use(express.json()); // Parse JSON bodies
@@ -30,7 +30,7 @@ app.use(express.json()); // Parse JSON bodies
 // Socket.io Setup
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://novaconnect-tau.vercel.app/"],
     methods: ["GET", "POST"]
   }
 });
