@@ -129,13 +129,13 @@ const LandingPage = () => {
             Experience the next generation of social networking. 
             Seamless video feeds, intelligent connections, and real-time conversations in a universe built for you.
           </p>
-          <a 
-            href="/login"
+          <Link
+            to="/login"
             className="group relative px-8 py-4 bg-white text-slate-900 font-bold rounded-full text-lg hover:scale-105 transition duration-300 shadow-2xl shadow-white/20 inline-block"
           >
             Join the Network
             <div className="absolute inset-0 h-full w-full rounded-full group-hover:animate-ping opacity-20 bg-white"></div>
-          </a>
+          </Link>
         </header>
 
         {/* Features Grid */}
