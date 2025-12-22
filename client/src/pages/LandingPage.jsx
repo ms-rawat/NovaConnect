@@ -18,7 +18,7 @@ const LandingPage = () => {
       canvas.height = window.innerHeight;
     };
 
-  
+
 
     const initParticles = () => {
       particles = [];
@@ -30,7 +30,7 @@ const LandingPage = () => {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       // Draw gradient background
       const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
       gradient.addColorStop(0, '#0f172a'); // Slate 900
@@ -46,7 +46,7 @@ const LandingPage = () => {
 
       // Connect Particles (Constellation Effect)
       connectParticles();
-      
+
       animationFrameId = requestAnimationFrame(animate);
     };
 
@@ -88,31 +88,31 @@ const LandingPage = () => {
   return (
     <div className="relative w-full min-h-screen overflow-x-hidden font-sans text-white">
       {/* Live Canvas Background */}
-      <canvas 
-        ref={canvasRef} 
+      <canvas
+        ref={canvasRef}
         className="fixed top-0 left-0 w-full h-full z-0"
       />
 
       {/* Content Overlay */}
       <div className="relative z-10">
-        
+
         {/* Navbar */}
-        <nav className="flex justify-between items-center p-6 max-w-7xl mx-auto">
-          <div className="text-2xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 cursor-pointer NovaConnectLogo">
+        <nav className="flex flex-col sm:flex-row gap-4  justify-between items-center px-4 py-4 md:py-6 md:px-8 max-w-7xl mx-auto">
+          <div className="text-xl md:text-2xl sm:text-lg font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 cursor-pointer NovaConnectLogo">
             NovaConnect
           </div>
-          <div className="space-x-4 flex items-center">
+          <div className="flex  items-center gap-6  ">
             <Link
-              to="/login" 
-              className="text-sm font-medium hover:text-blue-300 transition"
+              to="/login"
+              className="text-sm font-semibold text-slate-300 hover:text-white transition-colors duration-300 "
             >
               Sign In
             </Link>
             <Link
               to="/login"
-              className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-full text-sm font-bold transition shadow-lg shadow-blue-500/30"
+              className="relative group px-6 py-2.5 rounded-full overflow-hidden shadow-lg shadow-blue-500/25 transition-all duration-300 hover:shadow-purple-500/40 hover:scale-105"
             >
-              Get Started
+           Get Started
             </Link>
           </div>
         </nav>
@@ -126,7 +126,7 @@ const LandingPage = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-10">
-            Experience the next generation of social networking. 
+            Experience the next generation of social networking.
             Seamless video feeds, intelligent connections, and real-time conversations in a universe built for you.
           </p>
           <Link
