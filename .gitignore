@@ -36,4 +36,4 @@ desktop.ini
 *.njsproj
 *.sln
 *.sw?
-serviceAccountKey.json
+.serviceAccountKey.json
